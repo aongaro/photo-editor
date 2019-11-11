@@ -115,6 +115,8 @@ extension PhotoEditorViewController {
     }
     
     func hideControls() {
+        var controls = hiddenControls
+        
         for control in controls {
             if (control == "clear") {
                 clearButton.isHidden = true
